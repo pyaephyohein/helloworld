@@ -1,9 +1,7 @@
-version: "3"
+version: "3.4"
 
 services:
-    client:
-        image: pyaephyohein/helloworld:1.0
+    web:
+        image: pyaephyohein/helloworld:1.0-amd64
         ports:
-            - 8080:80
-        volumes:
-            - ./src:/usr/share/nginx/html
+            - 80
